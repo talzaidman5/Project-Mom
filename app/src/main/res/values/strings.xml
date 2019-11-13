@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Project-Mom</string>
+    <string name="Sunday">Sunday</string>
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Friday">Friday</string>
+    <string name="Prices">Prices</string>
+    <string name="Calender">Calender</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Name">Name</string>
+    <string name="Phone">Phone</string>
+    <string name="Type">Type</string>
+    <string name="Hours">Hours</string>
+    <string name="מחירים">מחירים</string>
+    <string name="מחיר">מחיר</string>
+    <string name="מוצר">מוצר</string>
+    <string name="מכנסיים_הצרת">מכנסיים_הצרת</string>
+    <string name="למכנסיים_מכפלת">למכנסיים_מכפלת</string>
+    <string name="שרוולים_קיצור">שרוולים_קיצור</string>
+    <string name="רוכסן_החלפת">רוכסן_החלפת</string>
+
+
+</resources>
