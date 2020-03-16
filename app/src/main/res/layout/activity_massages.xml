@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MassagesActivity"
+    android:background="@drawable/pic3">
+
+    <TextView
+        android:id="@+id/massages_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textSize="23dp"
+        android:textColor="#000000"
+        android:text="All the massages">
+    </TextView>
+    <ListView
+        android:id="@+id/massages_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_above="@id/massages_button"
+        android:layout_below="@id/massages_title"
+        />
+    <LinearLayout
+        android:id="@+id/massages_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/massages_BTN_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:background="@color/buttonColor"
+        android:text="back">
+    </Button>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".statusEvents"
+    android:background="@drawable/pic">
+    <TextView
+        android:id="@+id/status_TXT_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Do you approve the queue?"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#000000">
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/status_checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/status_TXT_title">
+        <CheckBox
+            android:id="@+id/status_CB_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/status_CB_no"
+            android:text="Yes">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/status_CB_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:text="No">
+        </CheckBox>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/status_NTB_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="35dp"
+        android:background="@color/buttonColor"
+        android:layout_margin="8dp"
+        android:textSize="17dp"
+        android:text="Confirm"></Button>
+</RelativeLayout>

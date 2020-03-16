@@ -1,4 +1,4 @@
-package com.example.project_mom;
+package com.example.project_sewing;
 
 import android.content.Context;
 

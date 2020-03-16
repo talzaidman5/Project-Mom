@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".AllTheEventsOfClient"
+    android:background="@drawable/pic3">
+    <TextView
+        android:id="@+id/allEventsOfClient_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:textSize="23dp"
+        android:textColor="#000000"
+        android:text="Your close queues:"></TextView>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/allEventsOfClient_title"
+        android:layout_above="@+id/closeEvent_BTN_back"
+        android:id="@+id/closeEventsListView">
+    </ListView>
+    <Button
+        android:id="@+id/closeEvent_BTN_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:text="back"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/buttonColor"></Button>
+
+
+
+</RelativeLayout>

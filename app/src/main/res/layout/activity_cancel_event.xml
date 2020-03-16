@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFF9F7"
+    tools:context=".ActivityCancelEvent">
+
+    <TextView
+        android:id="@+id/cancelEvent_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you want to cancel the queue?"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:textSize="20dp">
+
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/cancelEvent_checkBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancelEvent_title"
+        android:layout_marginTop="14dp">
+
+    <LinearLayout
+        android:id="@+id/cancelEvent_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp">
+        <CheckBox
+            android:id="@+id/cancelEvent_CB_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:text="Yes">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/cancelEvent_CB_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:layout_marginRight="5dp"
+            android:text="No">
+        </CheckBox>
+
+    </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/cancelEvent_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancelEvent_checkBox1"
+        android:layout_alignParentLeft="true"
+        android:background="@color/buttonColor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"
+        android:text="Confirm"></Button>
+</RelativeLayout>

@@ -1,24 +1,97 @@
 <resources>
     <string name="app_name">Project-Mom</string>
-    <string name="Sunday">Sunday</string>
-    <string name="Monday">Monday</string>
-    <string name="Tuesday">Tuesday</string>
-    <string name="Wednesday">Wednesday</string>
-    <string name="Friday">Friday</string>
-    <string name="Prices">Prices</string>
-    <string name="Calender">Calender</string>
-    <string name="Saturday">Saturday</string>
-    <string name="Name">Name</string>
-    <string name="Phone">Phone</string>
-    <string name="Type">Type</string>
-    <string name="Hours">Hours</string>
-    <string name="מחירים">מחירים</string>
-    <string name="מחיר">מחיר</string>
-    <string name="מוצר">מוצר</string>
-    <string name="מכנסיים_הצרת">מכנסיים_הצרת</string>
-    <string name="למכנסיים_מכפלת">למכנסיים_מכפלת</string>
-    <string name="שרוולים_קיצור">שרוולים_קיצור</string>
-    <string name="רוכסן_החלפת">רוכסן_החלפת</string>
 
 
+    <string-array name="Types">
+        <item>Choose the type</item>
+        <item>Shorten pants</item>
+        <item>Hem a skirt or dress</item>
+        <item>Shorten dress-shirt sleeves</item>
+        <item>Zipper replacement</item>
+        <item>Add a button</item>
+
+    </string-array>
+
+    <string-array name="day">
+        <item>Choose a day</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="month">
+        <item>Choose a month</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+    </string-array>
+
+    <string-array name="hour">
+        <item>Choose a hour</item>
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+    </string-array>
+
+    <string-array name="user">
+        <item>Select</item>
+        <item>Client</item>
+        <item>Manager</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

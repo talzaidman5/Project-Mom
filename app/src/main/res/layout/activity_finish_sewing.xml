@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFF9F7"
+    tools:context=".finishSewing">
+
+    <TextView
+        android:id="@+id/finish_sewing_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="Is the item ready?">
+    </TextView>
+    <LinearLayout
+        android:id="@+id/finish_sewing_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/finish_sewing_text"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/finish_sewing_CB"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="Yes"></TextView>
+        <CheckBox
+            android:id="@+id/finish_sewing_CB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/finish_sewing_checkBox"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/finish_sewing_BTN_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/buttonColor"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:text="back"></Button>
+        <Button
+            android:id="@+id/finish_sewing_BTN_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonColor"
+            android:layout_toRightOf="@id/finish_sewing_BTN_back"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:text="send a massage"></Button>
+    </RelativeLayout>
+</RelativeLayout>

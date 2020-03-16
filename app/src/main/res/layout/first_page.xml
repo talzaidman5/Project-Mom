@@ -1,24 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/prices">
+    android:background="@drawable/pic3">
 
-    <Button
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/img_galit"></ImageView>
+    <RelativeLayout
+        android:id="@+id/first_page_userAccount"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="@string/Calender">
-    </Button>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="@string/Prices"
+        android:layout_below="@+id/image">
+
+        <TextView
+            android:id="@+id/first_page_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:text="Log in as:"
+            android:textColor="#000000"
+            android:textSize="26dp"
+            app:fontFamily="@font/cagliostro"></TextView>
+        <Spinner
+            android:id="@+id/first_page_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/first_page_enter"
+            >
+        </Spinner>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/first_page_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/first_page_userAccount"
         >
-    </Button>
+    </FrameLayout>
+
 </RelativeLayout>
