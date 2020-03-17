@@ -23,7 +23,7 @@ public class ApproveQueueDialog extends AppCompatDialogFragment {
     private final int APPROVED=1;
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
     final DatabaseReference myRef = database.getReference("message");
-
+    private CheckBox status_CB_yes,status_CB_no;
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
@@ -31,12 +31,13 @@ public class ApproveQueueDialog extends AppCompatDialogFragment {
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         final LayoutInflater inflater = getActivity().getLayoutInflater();
-        view = inflater.inflate(R.layout.activity_finish_sewing, null);
+        view = inflater.inflate(R.layout.activity_status_events, null);
         builder.setView(view);
         final AlertDialog dialog = builder.create();
-        final CheckBox status_CB_yes = view.findViewById(R.id.status_CB_yes);
-        final CheckBox status_CB_no = view.findViewById(R.id.status_CB_no);
+        final Button finish_sewing_CB = view.findViewById(R.id.finish_sewing_CB);
         final Button status_NTB_send = view.findViewById(R.id.status_NTB_send);
+        status_CB_no = view.findViewById(R.id.status_CB_no);
+        status_CB_yes =view.findViewById(R.id.status_CB_yes);
         status_CB_no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,7 +69,7 @@ public class ApproveQueueDialog extends AppCompatDialogFragment {
             }
         });
 
-        status_NTB_send.setOnClickListener(new View.OnClickListener() {
+        status_NTB_send .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(status_CB_yes.isChecked()) {

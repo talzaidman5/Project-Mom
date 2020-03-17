@@ -49,6 +49,9 @@ public class MassagesActivity extends AppCompatActivity {
         for (Massage massages : First_page.allMassages.getAllMassages())
             if(massages.getPhoneNumber().equals(BlankFragment_Client.currentPhone))
                 allTheMassages.add(massages.getMassages());
+
+            if (allTheMassages.size()==0)
+                allTheMassages.add("No messages");
     }
 
 

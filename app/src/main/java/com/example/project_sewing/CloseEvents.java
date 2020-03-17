@@ -50,23 +50,24 @@ public class CloseEvents extends AppCompatActivity {
         if (First_page.allEvents != null) {
             removeAllFromArray(closeEvents);
         }
-        for (int i = 0; i < First_page.allEvents.getData().size(); i++) {
-            Object x = First_page.allEvents.getData().keySet().toArray()[i];
-            for (int j = 0; j < First_page.allEvents.getData().get(x).size(); j++) {
-                Event1 cur = First_page.allEvents.getData().get(x).get(j);
-                if (cur != null) {
-                    if ((cur.getStatus() == 1)) {
-                        if (checkTheDate(cur.getDay(), cur.getMonth(), cur.getYear())) {
-                            String buf = cur.getNumber() + " on " + cur.getDay() + "/" + cur.getMonth()
-                                    + "/" + cur.getYear() + " at " + cur.getHour() + " to " + "" + cur.getType();
-                            if (!checkDuplication(buf))
-                                closeEvents.add(buf);
+        if(First_page.allEvents!=null) {
+            for (int i = 0; i < First_page.allEvents.getData().size(); i++) {
+                Object x = First_page.allEvents.getData().keySet().toArray()[i];
+                for (int j = 0; j < First_page.allEvents.getData().get(x).size(); j++) {
+                    Event1 cur = First_page.allEvents.getData().get(x).get(j);
+                    if (cur != null) {
+                        if ((cur.getStatus() == 1)) {
+                            if (checkTheDate(cur.getDay(), cur.getMonth(), cur.getYear())) {
+                                String buf = cur.getNumber() + " on " + cur.getDay() + "/" + cur.getMonth()
+                                        + "/" + cur.getYear() + " at " + cur.getHour() + " to " + "" + cur.getType();
+                                if (!checkDuplication(buf))
+                                    closeEvents.add(buf);
+                            }
                         }
                     }
                 }
             }
         }
-
         if (closeEvents.isEmpty())
             closeEvents.add("There are no close queues");
 
